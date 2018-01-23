@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>Salon & SPA</title>
+    <meta name="keywords" content="Metal, Heavymetal, Black Sabbath">
+    <meta charset="utf-8" />
+    <meta name="author" content="Anna Ojdowska">
+    <link rel="stylesheet" type="text/css" href="css/StyleT.css" />
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/loadServices.js"></script>
+</head>
+<body id="container">
+
+    <div>
+        <a href="index.html">
+            <div id="header">
+            </div>
+        </a>
+        <div>
+            <table class="menu">
+                <tr>
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="reservations.html">Reservations</a></th>
+                    <th><a href="distance.html">Distance</a></th>
+                    <th><a href="weather.html">Weather</a></th>
+                    <th><a href="contact.html">Contact us</a></th>
+                </tr>
+            </table>
+            <div id="col_right">
+                <h1 id="BS">Treatments</h1>
+                <h3 id="BS1">Treatments available in our SPA</h3>
+                <div id="servicesDiv">
+                        <form id="filterForm">
+                                <table class="min">
+                                    <tr>
+                                        <td>Category</td>
+                                        <td>
+                                            <select name="CatFilter" id="catSelect" >
+                                                <option value="Face">Face</option>
+                                                <option value="Massage">Massage</option>
+                                                <option value="Bath">Bath</option>
+                                                <option value="Body">Body</option>
+                                                <option selected="selected" value="All">All</option>
+                                            </select>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                <tr> 
+                                    <td>Price</td>
+                                    <td>Minimum <input type="number" name="minPrice" min="0" max="300" step="10" value="0"></td>
+                                    <td>Maximum <input type="number" name="maxPrice" min="0" max="300" step="10" value="300"></td>
+                                </tr>
+                                </table>
+                            <div id="filterSubmit">
+                            <input type="submit" value="Filter">
+                            </div>
+                        </form>
+                    </div>
+                    <table id="sTable">
+                    </table>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+    <footer>
+        <br><br><br><br><br><br><br><br>
+    </footer>
+</body>
+</html>
+
+

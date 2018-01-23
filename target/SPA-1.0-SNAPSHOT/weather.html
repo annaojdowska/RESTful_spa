@@ -1,0 +1,77 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>Salon & SPA</title>
+    <meta name="keywords" content="Metal, Heavymetal, Black Sabbath">
+    <meta charset="utf-8" />
+    <meta name="author" content="Anna Ojdowska">
+    <link rel="stylesheet" type="text/css" href="css/StyleT.css" />
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/weather.js"></script>
+</head>
+<body id="container">
+
+    <div>
+       <a href="index.html">
+            <div id="header">
+            </div>
+        </a>
+        <div>
+            <table class="menu">
+                <tr> 
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="services.html">Treatments</a></th>
+                    <th><a href="reservations.html">Reservations</a></th>
+                    <th><a href="distance.html">Distance</a></th>
+                    <th><a href="contact.html">Contact us</a></th>
+                </tr>
+            </table>
+            <div id="col_right">
+                <h1>Weather</h1>
+                <div>
+                <h3 class="weatherClick"><a onclick="currentWeather();">Show current weather in our SPA area</a></h3>
+                <table id="currentWeatherTable" class="min2"></table>
+                </div>
+                <br>
+
+                <div>
+                <h3 id="BS1">Custom weather forecast</h3>
+                <form id="weatherForm">
+                    <table class="min2">
+                        <tr>
+                            <td>
+                                <p class="text">Number of days<input type="number" name="numberOfDays" min="1" max="16" step="1" value="3"></p>
+                            </td>
+                            <td>
+                    <p class="text">Temperature units
+                        <select id="unitSelect">
+                            <option selected="selected" value="metric">Celsius</option>
+                            <option value="imperial">Fahrenheit</option>
+                            <option value="">Kelvin</option>
+                        </select>
+                    </p>
+                        </td>
+                        <td>
+                    <p class="text">City <input type="text" name="city" value="London"></p>
+                        </td>
+                        <tr>
+                        <td>
+                    <input class="niceSubmit" type="submit" value="Check weather"/>
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+                <table id="forecastWeatherTable" class="min2"></table>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br><br><br><br><br><br><br><br>
+    </footer>
+</body>
+</html>

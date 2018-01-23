@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+    <title>Salon & SPA</title>
+    <meta name="keywords" content="Metal, Heavymetal, Black Sabbath">
+    <meta charset="utf-8" />
+    <meta name="author" content="Anna Ojdowska">
+    <link rel="stylesheet" type="text/css" href="css/StyleT.css" />
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/distance.js"></script>
+</head>
+<body id="container">
+
+    <div>
+        <a href="index.html">
+            <div id="header">
+            </div>
+        </a>
+        <div>
+            <table class="menu">
+                <tr> 
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="services.html">Treatments</a></th>
+                    <th><a href="reservations.html">Reservations</a></th>
+                    <th><a href="weather.html">Weather</a></th>
+                    <th><a href="contact.html">Contact us</a></th>
+                </tr>
+            </table>
+            <div id="col_right">
+                <h1 id="BS">Distance</h1>
+                <h3 id="BS1">How much time does it take to get to our SPA?</h3>
+                <form id='distanceForm'>
+                    <table class='min3'>
+                        <th>Origin address</th>
+                        <tr> 
+                            <td>City <input type="text" name="cityOrigin" placeholder='London'></td>
+                            <td>Street <input type="text" name="streetOrigin" placeholder='Aldwych'></td>
+                            <td>No <input type="number" min='1' name="noOrigin" placeholder='71' step='1'></td>
+                        </tr>
+                        <tr>
+                            <td>How do you travel?</td>
+                            <td>
+                                <select id="travelModeSelect">
+                                    <option selected="selected" value="driving">By car</option>
+                                    <option value="bicycling">By bike</option>
+                                    <option value="walking">On foot</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Which units do you prefere?</td>
+                            <td>
+                                <select id="unitSelect">
+                                    <option selected="selected" value="metric">Kilometers</option>
+                                    <option value="imperial">Miles</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='submit' value='Calculate distance' class='niceSubmit'>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <table id='distanceResultTable' class="min4"> 
+                </table>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br><br><br><br><br><br><br><br>
+    </footer>
+</body>
+</html>
